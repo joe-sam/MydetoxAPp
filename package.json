@@ -1,0 +1,43 @@
+{
+  "name": "mydetoxapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "clean": "npx react-native-clean-project",
+    "e2e:build-android-debug": "detox build --configuration android.emu.debug",
+    "e2e:run-android-debug": "detox test --configuration android.emu.debug --debug-synchronization 12500",
+    "e2e:build-android-release": "detox build --configuration android.emu.release",
+    "e2e:run-android-release": "detox test --configuration android.emu.release"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.66.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "babel-jest": "^27.4.5",
+    "detox": "^19.4.1",
+    "eslint": "8.5.0",
+    "jest": "^27.4.5",
+    "jest-circus": "27.4.5",
+    "jest-environment-node": "^27.4.4",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "mocha": "^9.1.3",
+    "prettier": "^2.5.1",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^4.5.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
